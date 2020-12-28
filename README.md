@@ -4,10 +4,8 @@ New feature proposal request for Slack
 
 # Preface
 
-At
-[<img alt="TLM Partners" src="https://tlmpartners.com/wp-content/uploads/sites/2/2020/10/TLM-LOGO-wTAG_v3_00000_00000-1.png" style="height: 1em;">](https://tlmpartners.com/)
-we are working on a Slack App to enrich the messages with useful information for us. One of the specific needs we have is the ability to customize additional information
-according to the user who reads the message.
+At [TLM Partners](https://tlmpartners.com/) we are working on a Slack App to enrich the messages with useful information for us. One of the specific needs we have is the
+ability to customize additional information according to the user who reads the message.
 
 After several attempts we are still not satisfied with the visual rendering of our App and after having thoroughly studied the [Slack-Api](https://api.slack.com/) we believe
 that it is not possible to achieve the result we want with the tools that Slack makes available to us today.
@@ -167,7 +165,8 @@ More than this we obviously need a change to API too in order to send such messa
 
 We have no specific requests about the API: the desired result could be achieved through many options.
 
-It could be through a simple change to [chat.postMessage](https://api.slack.com/methods/chat.postMessage) making it accept the new `enrich` key.
+It could be through a simple change to [chat.postMessage](https://api.slack.com/methods/chat.postMessage) making it accept the new `enrich` key. This option would also
+allow for easy to update the message through the [chat.update](https://api.slack.com/methods/chat.update) methoid, which would be an intgeresting nice to have.
 
 It could be through a new dedicated API method (ex. `chat.postEnrich`).
 
