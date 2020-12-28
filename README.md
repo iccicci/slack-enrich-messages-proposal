@@ -165,8 +165,8 @@ More than this we obviously need a change to API too in order to send such messa
 
 We have no specific requests about the API: the desired result could be achieved through many options.
 
-It could be through a simple change to [chat.postMessage](https://api.slack.com/methods/chat.postMessage) making it accept the new `enrich` key. This option would also
-allow for easy to update the message through the [chat.update](https://api.slack.com/methods/chat.update) methoid, which would be an intgeresting nice to have.
+It could be done through a simple change to [chat.postMessage](https://api.slack.com/methods/chat.postMessage) making it accept the new `enrich` key. This option would
+also allow for easy to update the message through the [chat.update](https://api.slack.com/methods/chat.update) method, which would be an intgeresting nice to have.
 
 It could be through a new dedicated API method (ex. `chat.postEnrich`).
 
